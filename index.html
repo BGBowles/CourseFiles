@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial scale=1.0"
+    />
+    
+    <link rel="icon" href="./Images/bank.png" alt="Tab Icon"/>
+    <title>A React-based Banking App</title>
+
+    <!-- BOOTSTRAP CSS. -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- BABEL COMPILER - STAND-ALONE VERSION. -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  </head>
+  
+  <body>
+    <!-- LOAD THE REACT ROOT DIV. -->
+    <div id="root"></div>
+
+    <!-- LOAD REACT.
+    VERSIONS:
+    REACT = 18.2
+    REACT.DOM = 18.2
+    REACT-ROUTER = 6.22.3 (from 5.2.1)
+    REACT-ROUTER-DOM = 6.22.3 (from 5.2.1)
+    -->
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-router/dist/umd/react-router.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-router-dom/dist/umd/react-router-dom.development.js" crossorigin></script>
+
+    <!-- LINK TO REACT COMPONENTS. (!) ORDER IN WHICH THEY ARE LISTED IS CRITICAL. (!) -->
+    <script src="./Components/Context.js"        defer type="text/babel"></script>
+    <script src="./Components/Navbar.js"         defer type="text/babel"></script>
+    
+    <script src="./Components/Home.js"           defer type="text/babel"></script>
+    <script src="./Components/Account.js"        defer type="text/babel"></script>
+    <script src="./Components/Deposit.js"        defer type="text/babel"></script>
+    <script src="./Components/Withdrawal.js"     defer type="text/babel"></script>
+    <script src="./Components/AllData.js"        defer type="text/babel"></script>
+    <script src="./Components/Balance.js"        defer type="text/babel"></script>
+    
+    <script src="./Components/Index.js"          defer type="text/babel"></script>
+
+  </body>
+</html>
